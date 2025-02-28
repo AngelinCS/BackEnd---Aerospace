@@ -108,7 +108,27 @@ deactivate
 
 ```
 
+#### Add required modules
 
+```shell
+
+# Go into virutal environment (VENV)
+# Once inside you can install the modules using the requirements.txt
+
+pip install -r requirements.txt
+
+# This will install all the modules but inside your VENV you can also run this command
+
+pip install pandas influxdb numpy fastapi pydantic requests
+
+```
+
+## Documentation
+
+The project back-end is dependent on influxdb, make sure to read any of the documentation for instructions on how the code functions. [INFLUX DB DOCUMENTATION](https://docs.influxdata.com/influxdb/v1/about_the_project/release-notes/)
+
+> [!IMPORTANT]
+> This project runs on specific version of influxdb v1 make sure to get the correct documentation.
 
 
 
