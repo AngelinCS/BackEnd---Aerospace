@@ -8,6 +8,7 @@
 ## Table of Contents
 - [About](#-about)
 - [How to Build](#-how-to-build)
+- [Running the Script](#-running-the-script)
 - [Documentation](#-documentation)
 - [Feedback and Contributions](#-feedback-and-contributions)
 - [License](#-license)
@@ -113,7 +114,7 @@ deactivate
 ```shell
 
 # Go into virutal environment (VENV)
-# Once inside you can install the modules using the requirements.txt
+# Once inside you can install the modules using the requirements.txt, MAKE SURE THAT YOU ARE IN THE DIRECTORY WHERE REQUIREMENTS.TXT
 
 pip install -r requirements.txt
 
@@ -121,7 +122,21 @@ pip install -r requirements.txt
 
 pip install pandas influxdb numpy fastapi pydantic requests
 
+
 ```
+## Running the Script
+
+```shell
+# To run this code make sure to download the sem almanac files from https://www.navcen.uscg.gov/gps-nanus-almanacs-opsadvisories-sof
+# The files need to be place within the dop-data-gen folder
+# navigate to directory within visual code terminal, the script that will run is the generate_dop_data.py
+# run this command
+
+export TIME_KEY=2024-08-21T15:40:30Z
+python generate_dop_data.py
+
+```
+
 
 ## Documentation
 
